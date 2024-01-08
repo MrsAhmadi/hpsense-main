@@ -1,0 +1,108 @@
+@keyframes AnimateDropdown {
+    100% {
+        transform: translateY(0);
+    }
+    0% {
+        transform: translateY(10px);
+    }
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.form-select:focus{
+    box-shadow: none;
+}
+.top-header{
+    z-index: 1030;
+}
+.sidebar{
+    top:3.5rem;
+    width: 15rem;
+    height: 100vh;
+    transition:transform 0.5s;
+}
+.open-sidebar{
+    transform: translateX(-100%);
+}
+.open-sidebar+.content{
+    margin-left: 0;
+    transition: all 0.5s;
+}
+.content{
+    margin-left:15rem;
+    margin-top: 3.5rem;
+    transition: all 0.5s;
+}
+.page-link{
+    color:black;
+}
+.dropdown-menu-animated {
+    position: absolute;
+    margin: 0;
+    animation-name: AnimateDropdown;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    z-index: 1000;
+    box-shadow: 0 0 0 1px rgba(20,20,31,.05), 0 2px 7px 1px rgba(20,20,31,.16);
+}
+.dropdown-menu-animated:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    top: -0.376rem;
+    right: 0.5rem;
+    transform: rotate(45deg);
+    border-radius: 0.125rem;
+}
+.dropdown-menu-end[data-bs-popper] {
+    right:5px;
+}
+.nav-pills .nav-link:hover{
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-nav-pills-link-active-bg);
+}
+.filter-table .nav-link:hover,.filter-table .nav-link:active,.filter-table .nav-link:focus{
+    background: #316cf4;
+    color: white;
+}
+.page-item .page-link:hover{
+    background-color:#f6f7fb;
+    color:#316cf4;
+}
+.page-item .page-link:focus{
+    background-color:#316cf4 ;
+    color: white;
+}
+.page-item:first-child .page-link:focus,.page-item:last-child .page-link:focus,.page-item:first-child .page-link:hover,.page-item:last-child .page-link:hover{
+    background:none;
+    color:#316cf4;
+}
+.box-number{
+    width: 6.5rem;
+}
+.number{
+    font-size:4rem;
+    font-weight:600;
+}
+.table{
+    white-space: nowrap;
+}
+
+/*For Mobiles and tablet*/
+@media screen  and (max-width: 991px) {
+    .content{
+        margin-left: 0;
+    }
+    .sidebar{
+        transform: translateX(-100%);
+        top: 0;
+        background: white;
+        z-index: 10000000;
+    }
+    .open-sidebar{
+        transform:none;
+    }
+}
