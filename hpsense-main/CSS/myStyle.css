@@ -8,6 +8,7 @@
 }
 body{
     direction: rtl;
+    font-size: 16px;
     /*font-family: "B Nazanin";*/
 }
 .cursor-pointer{
@@ -106,16 +107,42 @@ body{
 .table .bi-chevron-right{
     transform: rotate(180deg);
 }
+ul.nav{
+    padding-right:0 ;
+}
+
+input::placeholder{
+    font-size: 14px;
+}
+.sidebar .main-menu .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form-floating>label{
+    right: 0;
+    left: auto;
+    padding-top: 0.75rem;
+}
+.form-floating>.form-control:focus, .form-floating>.form-control:not(:placeholder-shown){
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.form-select{
+    background-position:right 0.75rem;
+}
 /*For Mobiles and tablet*/
 @media screen  and (max-width: 991px) {
     .content{
-        margin-left: 0;
+        margin-right: 0;
     }
     .sidebar{
-        transform: translateX(-100%);
+        transform: translateX(100%);
         top: 0;
         background: white;
         z-index: 10000000;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
     }
     .open-sidebar{
         transform:none;

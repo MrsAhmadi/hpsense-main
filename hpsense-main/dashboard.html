@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
+  <title>داشبورد</title>
   <link rel="stylesheet" href="CSS/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/myStyle.css">
 </head>
@@ -10,29 +11,29 @@
 <div class="container">
   <div class="card card-Notification rounded-4 my-3">
     <div class="card-header pt-3 border-0 bg-transparent">
-      <h3 class="card-title mb-0">Notifications</h3>
+      <h3 class="card-title mb-0">اعلان ها</h3>
     </div>
     <div class="card-body">
       <div class="row row-cols-1 row-cols-lg-3 g-3">
         <div class="col">
           <div class="card rounded-4">
             <div class="row g-0">
-              <div class="col-4 bg-warning rounded-start-4 d-flex justify-content-center align-items-center">
+              <div class="col-4 bg-warning rounded-end-4 d-flex justify-content-center align-items-center">
                 <div class="box-number d-flex flex-column align-items-center position-relative">
-                  <small class="position-absolute">Heart Plate</small>
+                  <small class="position-absolute">ضربان قلب</small>
                   <h3 class="number text-white mt-2">95</h3>
                 </div>
 
               </div>
               <div class="col-8">
                 <div class="card-body pt-2">
-                  <div class="text-end">
+                  <div class="text-start">
                     <button type="button" class="btn-close" aria-label="Close"></button>
                   </div>
                   <p class="card-text">
-                    <small class="text-body-secondary">{Patient status}</small></p>
-                  <h5 class="card-title mb-3">{Patient Name}</h5>
-                  <p class="card-text text-end fw-bold">{location}</p>
+                    <small class="text-body-secondary">{ وضعیت بیمار}</small></p>
+                  <h5 class="card-title mb-3">{ نام بیمار}</h5>
+                  <p class="card-text text-start fw-bold">{مکان}</p>
                 </div>
               </div>
             </div>
@@ -41,22 +42,22 @@
         <div class="col">
           <div class="card rounded-4">
             <div class="row g-0">
-              <div class="col-4 bg-warning rounded-start-4 d-flex justify-content-center align-items-center">
+              <div class="col-4 bg-warning rounded-end-4 d-flex justify-content-center align-items-center">
                 <div class="box-number d-flex flex-column align-items-center position-relative">
-                  <small class="position-absolute">Heart Plate</small>
+                  <small class="position-absolute">ضربان قلب</small>
                   <h3 class="number text-white mt-2">95</h3>
                 </div>
 
               </div>
               <div class="col-8">
                 <div class="card-body pt-2">
-                  <div class="text-end">
+                  <div class="text-start">
                     <button type="button" class="btn-close" aria-label="Close"></button>
                   </div>
                   <p class="card-text">
-                    <small class="text-body-secondary">{Patient status}</small></p>
-                  <h5 class="card-title mb-3">{Patient Name}</h5>
-                  <p class="card-text text-end fw-bold">{location}</p>
+                    <small class="text-body-secondary">{ وضعیت بیمار}</small></p>
+                  <h5 class="card-title mb-3">{ نام بیمار}</h5>
+                  <p class="card-text text-start fw-bold">{مکان}</p>
                 </div>
               </div>
             </div>
@@ -65,44 +66,45 @@
         <div class="col">
           <div class="card rounded-4">
             <div class="row g-0">
-              <div class="col-4 bg-warning rounded-start-4 d-flex justify-content-center align-items-center">
+              <div class="col-4 bg-warning rounded-end-4 d-flex justify-content-center align-items-center">
                 <div class="box-number d-flex flex-column align-items-center position-relative">
-                  <small class="position-absolute">Heart Plate</small>
+                  <small class="position-absolute">ضربان قلب</small>
                   <h3 class="number text-white mt-2">95</h3>
                 </div>
 
               </div>
               <div class="col-8">
                 <div class="card-body pt-2">
-                  <div class="text-end">
+                  <div class="text-start">
                     <button type="button" class="btn-close" aria-label="Close"></button>
                   </div>
                   <p class="card-text">
-                    <small class="text-body-secondary">{Patient status}</small></p>
-                  <h5 class="card-title mb-3">{Patient Name}</h5>
-                  <p class="card-text text-end fw-bold">{location}</p>
+                    <small class="text-body-secondary">{ وضعیت بیمار}</small></p>
+                  <h5 class="card-title mb-3">{ نام بیمار}</h5>
+                  <p class="card-text text-start fw-bold">{مکان}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
   <div class="card card-PatientStatus bg-light rounded-4 my-3">
     <div class="card-header position-relative pt-3 d-flex flex-lg-row justify-content-between flex-wrap gap-3 border-0 bg-transparent">
-      <h3 class="card-title mb-0">Patient Status</h3>
+      <h3 class="card-title mb-0">وضعیت بیمار</h3>
       <div class="m-auto d-flex flex-column flex-md-row align-items-center gap-2 order-3 order-lg-0">
-        <label class="form-label mb-0">Filter By :</label>
+        <label class="form-label mb-0">فیلتر بر اساس :</label>
         <ul class="nav nav-pills gap-1 gap-md-2" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link px-1 px-md-2 active" id="pills-location-tab" data-bs-toggle="pill" data-bs-target="#pills-location" type="button" role="tab" aria-controls="pills-location" aria-selected="true">Location</button>
+            <button class="nav-link px-1 px-md-2 active" id="pills-location-tab" data-bs-toggle="pill" data-bs-target="#pills-location" type="button" role="tab" aria-controls="pills-location" aria-selected="true">مکان</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link px-1 px-md-2" id="pills-PatientName-tab" data-bs-toggle="pill" data-bs-target="#pills-PatientName" type="button" role="tab" aria-controls="pills-PatientName" aria-selected="false">Patient Name</button>
+            <button class="nav-link px-1 px-md-2" id="pills-PatientName-tab" data-bs-toggle="pill" data-bs-target="#pills-PatientName" type="button" role="tab" aria-controls="pills-PatientName" aria-selected="false">نام بیمار</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link px-1 px-md-2" id="pills-Heart/Breach-tab" data-bs-toggle="pill" data-bs-target="#pills-Heart/Breach" type="button" role="tab" aria-controls="pills-Heart/Breach" aria-selected="false">Heart Breath Rate</button>
+            <button class="nav-link px-1 px-md-2" id="pills-Heart/Breach-tab" data-bs-toggle="pill" data-bs-target="#pills-Heart/Breach" type="button" role="tab" aria-controls="pills-Heart/Breach" aria-selected="false">ضربان تنفس قلب</button>
           </li>
         </ul>
       </div>
@@ -110,29 +112,29 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
         </svg>
-        Add New Patient</button>
+        اضافه کردن بیمار جدید</button>
     </div>
     <div class="card-body">
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-location" role="tabpanel" aria-labelledby="pills-location-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-lg-3 g-3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-info rounded-start">
+                  <div class="col-1 bg-info rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -140,10 +142,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -153,7 +155,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -161,13 +163,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-info rounded-start">
+                      <div class="col-1 bg-info rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -179,20 +183,20 @@
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-success rounded-start">
+                  <div class="col-1 bg-success rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -200,10 +204,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -213,7 +217,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -221,13 +225,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-success rounded-start">
+                      <div class="col-1 bg-success rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -239,20 +245,20 @@
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-warning rounded-start">
+                  <div class="col-1 bg-warning rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -260,10 +266,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -273,7 +279,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -281,13 +287,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-warning rounded-start">
+                      <div class="col-1 bg-warning rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -299,24 +307,24 @@
           </div>
         </div>
         <div class="tab-pane fade" id="pills-PatientName" role="tabpanel" aria-labelledby="pills-PatientName-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-lg-3 g-3">
+          <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-3">
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-info rounded-start">
+                  <div class="col-1 bg-info rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -324,10 +332,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -337,7 +345,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -345,13 +353,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-info rounded-start">
+                      <div class="col-1 bg-info rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -360,147 +370,28 @@
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card cursor-pointer" >
-                <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-warning rounded-start">
-                  </div>
-                  <div class="col-11 px-0">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                      </div>
-                      <div class="row row-cols-2 px-4">
-                        <div class="col">
-                          <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
-                            <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
-                            <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
-                              </svg>
-                            </span>
-                          </div>
 
-                        </div>
-                      </div>
-                      <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-menu w-100 py-0">
-                  <div class="card " >
-                    <div class="row m-0">
-                      <div class="col-1 bg-warning rounded-start">
-                      </div>
-                      <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
-                          <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card cursor-pointer" >
-                <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-success rounded-start">
-                  </div>
-                  <div class="col-11 px-0">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                      </div>
-                      <div class="row row-cols-2 px-4">
-                        <div class="col">
-                          <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
-                            <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
-                            <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
-                              </svg>
-                            </span>
-                          </div>
-
-                        </div>
-                      </div>
-                      <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-menu w-100 py-0">
-                  <div class="card " >
-                    <div class="row m-0">
-                      <div class="col-1 bg-success rounded-start">
-                      </div>
-                      <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
-                          <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-Heart/Breach" role="tabpanel" aria-labelledby="pills-Heart/Breach-tab" tabindex="0">
-          <div class="row row-cols-1 row-cols-lg-3 g-3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-success rounded-start">
+                  <div class="col-1 bg-success rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -508,10 +399,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -521,7 +412,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -529,13 +420,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-success rounded-start">
+                      <div class="col-1 bg-success rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -547,20 +440,20 @@
             <div class="col">
               <div class="card cursor-pointer" >
                 <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-info rounded-start">
+                  <div class="col-1 bg-warning rounded-end">
                   </div>
                   <div class="col-11 px-0">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
+                        <h5 class="card-title">{نام بیمار}</h5>
                         <button type="button" class="btn-close" aria-label="Close"></button>
                       </div>
-                      <div class="row row-cols-2 px-4">
+                      <div class="row row-cols-2 gx-2">
                         <div class="col">
                           <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
+                            <small class="position-absolute">ضربان قلب</small>
                             <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-danger position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                               </svg>
@@ -568,10 +461,10 @@
                           </div>
                         </div>
                         <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
+                          <div class="box-number d-flex flex-column align-items-center position-relative ">
+                            <small class="position-absolute">میزان تنفس</small>
                             <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
+                            <span class="text-success position-absolute start-0 top-0 translate-middle-x">
                               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
                                 <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
                               </svg>
@@ -581,7 +474,7 @@
                         </div>
                       </div>
                       <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
+                        <small class="text-body-secondary">{وضعیت بیمار}</small>
                       </p>
                     </div>
                   </div>
@@ -589,133 +482,15 @@
                 <div class="dropdown-menu w-100 py-0">
                   <div class="card " >
                     <div class="row m-0">
-                      <div class="col-1 bg-info rounded-start">
+                      <div class="col-1 bg-warning rounded-end">
                       </div>
                       <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
+                        <div class="card-body text-end">
+                          <h5 class="card-title">موج قلب</h5>
                           <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card cursor-pointer" >
-                <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-success rounded-start">
-                  </div>
-                  <div class="col-11 px-0">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                      </div>
-                      <div class="row row-cols-2 px-4">
-                        <div class="col">
-                          <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
-                            <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
-                            <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
-                              </svg>
-                            </span>
-                          </div>
-
-                        </div>
-                      </div>
-                      <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-menu w-100 py-0">
-                  <div class="card " >
-                    <div class="row m-0">
-                      <div class="col-1 bg-success rounded-start">
-                      </div>
-                      <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
-                          <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card cursor-pointer" >
-                <div class="row g-0" data-bs-toggle="dropdown">
-                  <div class="col-1 bg-success rounded-start">
-                  </div>
-                  <div class="col-11 px-0">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between align-items-center mb-3 ">
-                        <h5 class="card-title">{Patient Name}</h5>
-                        <button type="button" class="btn-close" aria-label="Close"></button>
-                      </div>
-                      <div class="row row-cols-2 px-4">
-                        <div class="col">
-                          <div class="box-number d-flex flex-column align-items-center position-relative">
-                            <small class="position-absolute">Heart Rate</small>
-                            <span class="number d-inline-block">95</span>
-                            <span class="text-danger position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                              </svg>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="d-flex flex-column align-items-center position-relative ">
-                            <small class="position-absolute">Breath Rate</small>
-                            <span class="number d-inline-block">15</span>
-                            <span class="text-success position-absolute start-100 top-0 translate-middle-x">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-lungs-fill" viewBox="0 0 16 16">
-                                <path d="M8 1a.5.5 0 0 1 .5.5v5.243L9 7.1V4.72C9 3.77 9.77 3 10.72 3c.524 0 1.023.27 1.443.592.431.332.847.773 1.216 1.229.736.908 1.347 1.946 1.58 2.48.176.405.393 1.16.556 2.011.165.857.283 1.857.24 2.759-.04.867-.232 1.79-.837 2.33-.67.6-1.622.556-2.741-.004l-1.795-.897A2.5 2.5 0 0 1 9 11.264V8.329l-1-.715-1 .715V7.214c-.1 0-.202.03-.29.093l-2.5 1.786a.5.5 0 1 0 .58.814L7 8.329v2.935A2.5 2.5 0 0 1 5.618 13.5l-1.795.897c-1.12.56-2.07.603-2.741.004-.605-.54-.798-1.463-.838-2.33-.042-.902.076-1.902.24-2.759.164-.852.38-1.606.558-2.012.232-.533.843-1.571 1.579-2.479.37-.456.785-.897 1.216-1.229C4.257 3.27 4.756 3 5.28 3 6.23 3 7 3.77 7 4.72V7.1l.5-.357V1.5A.5.5 0 0 1 8 1Zm3.21 8.907a.5.5 0 1 0 .58-.814l-2.5-1.786A.498.498 0 0 0 9 7.214V8.33l2.21 1.578Z"/>
-                              </svg>
-                            </span>
-                          </div>
-
-                        </div>
-                      </div>
-                      <p class="card-text">
-                        <small class="text-body-secondary">{Patient status}</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="dropdown-menu w-100 py-0">
-                  <div class="card " >
-                    <div class="row m-0">
-                      <div class="col-1 bg-success rounded-start">
-                      </div>
-                      <div class="col-11 px-0">
-                        <div class="card-body">
-                          <h5 class="card-title">Heart Wave</h5>
-                          <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur delectus distinctio dolor doloribus earum est fuga impedit inventore laboriosam minus nihil odio officiis quidem quisquam, quos voluptate? Alias, magnam!</p>
+                            <p class="mb-0">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -727,19 +502,19 @@
           </div>
         </div>
       </div>
-      <div class="row row-cols-lg-3 mt-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3">
         <div class="col">
           <div class="card" >
             <div class="row m-0">
-              <div class="col-2 bg-primary rounded-start">
+              <div class="col-2 bg-primary rounded-end">
               </div>
               <div class="col-10 px-0">
                 <div class="card-body py-5">
-                  <a href="" class="btn text-primary ">
+                  <a href="" role="button" class="btn text-primary border-0 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
                     </svg>
-                    Add New Patient
+                      اضافه کردن بیمار جدید
                   </a>
 
                 </div>
