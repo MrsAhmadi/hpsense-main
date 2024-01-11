@@ -185,7 +185,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="" role="button" class="nav-link btn btn-sm d-flex align-items-center justify-content-center p-2 gap-2" data-bs-toggle="modal" data-bs-target="#">
+                            <a href="" role="button" class="nav-link btn btn-sm d-flex align-items-center justify-content-center p-2 gap-2" data-bs-toggle="modal" data-bs-target="#TaskModal">
                     <span class="d-inline-block ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -357,54 +357,54 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Create Task</h5>
+                    <h5 class="modal-title">ایجاد تسک</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                     <div class="modal-body">
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingStatusName" placeholder="StatusName">
-                            <label for="floatingStatusName">Task Name</label>
+                            <label for="floatingStatusName">نام تسک</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingPatientList" placeholder="PatientList">
-                            <label for="floatingPatientList">Patient List</label>
+                            <label for="floatingPatientList">لیست بیمار</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingMinHeartRate" placeholder="MinHeartRate">
-                            <label for="floatingPatientList">Min Heart Rate</label>
+                            <label for="floatingPatientList">حداقل ضربان قلب</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingMaxHeartRate" placeholder="MaxHeartRate">
-                            <label for="floatingMaxHeartRate">Max Heart Rate</label>
+                            <label for="floatingMaxHeartRate">حداکثر ضربان قلب</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingMinBreathRate" placeholder="MinBreathRate">
-                            <label for="floatingMinBreathRate">Min Breath Rate</label>
+                            <label for="floatingMinBreathRate">حداقل میزان تنفس</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="floatingMaxBreathRate" placeholder="MaxBreathRate">
-                            <label for="floatingMaxBreathRate">Max Breath Rate</label>
+                            <label for="floatingMaxBreathRate">حداکثر میزان تنفس</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="time" class="form-control" id="floatingBreathWithinTime" placeholder="BreathWithinTime">
-                            <label for="floatingBreathWithinTime">Breath Within Time</label>
+                            <label for="floatingBreathWithinTime">نفس در زمان</label>
                         </div>
                         <div class="form-floating mb-2">
                             <input type="time" class="form-control" id="floatingHeartWithinTime" placeholder="HeartWithinTime">
-                            <label for="floatingHeartWithinTime">Heart Within Time</label>
+                            <label for="floatingHeartWithinTime">قلب در زمان</label>
                         </div>
                         <div class="form-floating mb-2">
                             <select name="" id="floatingAlertType" class="form-select">
-                                <option value="0" selected>Dashboard Notification </option>
-                                <option value="1">SMS</option>
-                                <option value="2">Email</option>
+                                <option value="0" selected>اطلاعیه داشبورد </option>
+                                <option value="1">پیام</option>
+                                <option value="2">ایمیل</option>
                             </select>
-                            <label for="floatingAlertType">Alert Type</label>
+                            <label for="floatingAlertType">نوع هشدار</label>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Add</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                        <button type="button" class="btn btn-primary">اضافه کردن</button>
                     </div>
             </div>
         </div>

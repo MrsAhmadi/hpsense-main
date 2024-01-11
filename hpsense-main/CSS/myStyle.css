@@ -131,6 +131,25 @@ input::placeholder{
 .form-select{
     background-position:right 0.75rem;
 }
+.btn-close{
+    padding: 0;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.fs-12{
+    font-size: 12px;
+}
+.card-Notification .btn-collapse .bi-chevron-double-up{
+    transition: all 0.3s;
+}
+.card-Notification .btn-collapse.collapsed .bi-chevron-double-up{
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+.modal-header .btn-close{
+    margin: 0;
+}
 /*For Mobiles and tablet*/
 @media screen  and (max-width: 991px) {
     .content{

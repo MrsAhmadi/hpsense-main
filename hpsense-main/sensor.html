@@ -185,7 +185,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="" role="button" class="nav-link btn btn-sm d-flex align-items-center justify-content-center p-2 gap-2" data-bs-toggle="modal" data-bs-target="#">
+              <a href="" role="button" class="nav-link btn btn-sm d-flex align-items-center justify-content-center p-2 gap-2" data-bs-toggle="modal" data-bs-target="#SensorModal">
                     <span class="d-inline-block ">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
@@ -384,21 +384,21 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Create Sensor</h5>
+          <h5 class="modal-title">ایجاد حسگر</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form action="" novalidate>
           <div class="modal-body">
             <div class="form-floating mb-2">
               <input type="text" class="form-control" id="floatingSensorName" placeholder="SensorName">
-              <label for="floatingSensorName">SensorName</label>
+              <label for="floatingSensorName">نام حسگر</label>
             </div>
             <div class="form-floating mb-2">
               <select name="" id="floatingLocationIDRef" class="form-select">
-                <option value="" selected>location list</option>
-                <option value="1">location list</option>
+                <option value="" selected>لیست مکان</option>
+                <option value="1">لیست مکان</option>
               </select>
-              <label for="floatingLocationIDRef">LocationIDRef</label>
+              <label for="floatingLocationIDRef">مکانIDRef</label>
             </div>
             <div class="form-floating mb-2">
               <select name="" id="floatingSensorType" class="form-select">
@@ -406,20 +406,20 @@
                 <option value="1">1</option>
                 <option value="1">3</option>
               </select>
-              <label for="floatingSensorType">SensorType</label>
+              <label for="floatingSensorType">نوع حسگر</label>
             </div>
             <div class="form-floating mb-2">
               <select name="" id="floatingMode" class="form-select">
                 <option value="0" selected>Real time</option>
-                <option value="1">sleep Mode</option>
+                <option value="1">حالت خواب</option>
               </select>
-              <label for="floatingMode">Mode</label>
+              <label for="floatingMode">حالت</label>
             </div>
 
         </div>
           <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+          <button type="button" class="btn btn-primary">اضافه کردن</button>
         </div>
         </form>
       </div>
