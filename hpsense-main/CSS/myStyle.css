@@ -1,3 +1,4 @@
+@import url("farsi-fonts-styles/primary-iran-sans.css");
 @keyframes AnimateDropdown {
     100% {
         transform: translateY(0);
@@ -6,10 +7,12 @@
         transform: translateY(10px);
     }
 }
+
+
 body{
+    font-family: "primary-font", "segoe ui", "tahoma", serif;
     direction: rtl;
     font-size: 16px;
-    /*font-family: "B Nazanin";*/
 }
 .cursor-pointer{
     cursor: pointer;
@@ -95,7 +98,9 @@ body{
 }
 .number{
     font-size:4rem;
-    font-weight:600;
+    font-weight:700;
+    line-height: inherit;
+    margin-top: 14px;
 }
 .table{
     white-space: nowrap;
@@ -129,7 +134,7 @@ input::placeholder{
     padding-bottom: 1rem;
 }
 .form-select{
-    background-position:right 0.75rem;
+    background-position:right 0.55rem;
 }
 .btn-close{
     padding: 0;
@@ -149,6 +154,10 @@ input::placeholder{
 }
 .modal-header .btn-close{
     margin: 0;
+}
+.card-title{
+    margin-bottom: 0;
+    font-weight: 700;
 }
 /*For Mobiles and tablet*/
 @media screen  and (max-width: 991px) {
