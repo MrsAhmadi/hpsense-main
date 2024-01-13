@@ -99,7 +99,6 @@ body{
 .number{
     font-size:4rem;
     font-weight:700;
-    line-height: inherit;
     margin-top: 14px;
 }
 .table{
